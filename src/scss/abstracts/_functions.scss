@@ -1,0 +1,26 @@
+// $colors: (
+// 	primary: (
+// 		base: $almost_white,
+// 		light: lighten($almost_white, $lighten),
+// 		dark: darken($almost_white, $darken),
+// 	),
+// 	ab: (
+// 		base: $almost_black,
+// 		light: lighten($almost_black, $lighten),
+// 		dark: darken($almost_black, $darken),
+// 	),
+// 	mg: (
+// 		base: $medium_gray,
+// 		light: lighten($medium_gray, $lighten),
+// 		dark: darken($medium_gray, $darken),
+// 	),
+// 	neutral: (
+// 		base: #69777f,
+// 		light: #b2cad8,
+// 	),
+// );
+
+// @function clr($base, $shade: base) {
+// 	$color: map-get(map-get($colors, $base), $shade);
+// 	@return $color;
+// }

@@ -1,0 +1,43 @@
+@use "./abstracts" as *;
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/second";
+@import "./components/button";
+@import "./base/globals";
+@import "./layout/articles";
+@import "./layout/footer";
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+// spacing
+
+// Buttons
+
+// Visability
+
+.hide-for-mobile {
+	@include breakpoint-down(medium) {
+		display: none;
+	}
+}
+
+.hide-for-desktop {
+	@include breakpoint-up(large) {
+		display: none;
+	}
+}
+
+.spacer {
+	@include breakpoint-down(large) {
+		margin-left: auto;
+	}
+}

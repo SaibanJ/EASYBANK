@@ -1,0 +1,80 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.container {
+	max-width: 69.375rem;
+	margin: 0 auto;
+
+	&--pall {
+		padding-bottom: 4.375rem;
+		padding-top: 4.375rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+
+		@include breakpoint-up(large) {
+			padding-top: 6rem;
+			padding-bottom: 6rem;
+		}
+	}
+	&--py {
+		padding-bottom: 4.375rem;
+		padding-top: 4.375rem;
+
+		@include breakpoint-up(large) {
+			padding-top: 6rem;
+			padding-bottom: 6rem;
+		}
+	}
+
+	&--px {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	&--pb {
+		padding-bottom: 4.375rem;
+
+		@include breakpoint-up(large) {
+			padding-bottom: 6rem;
+		}
+	}
+
+	&--pt {
+		padding-top: 4.375rem;
+		@include breakpoint-up(large) {
+			padding-top: 6rem;
+		}
+	}
+
+	&--pr {
+		padding-right: 1.5rem;
+	}
+
+	&--pl {
+		padding-left: 1.5rem;
+	}
+}
+
+// flex helper classes
+.flex {
+	display: flex;
+
+	&-jc-sb {
+		justify-content: space-between;
+	}
+	&-jc-fs {
+		justify-content: flex-start;
+	}
+
+	&-jc-fe {
+		justify-content: flex-end;
+	}
+
+	&-jc-c {
+		justify-content: center;
+	}
+
+	&-ai-c {
+		align-items: center;
+	}
+}
